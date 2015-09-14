@@ -1,6 +1,6 @@
 *       *********************************************************
 *       *                                                         
-*       * 09/08/2015            ITMENU.MPR              22:56:16  
+*       * 09/13/15             ITMENU.MPR               20:31:24  
 *       *                                                         
 *       *********************************************************
 *       *                                                         
@@ -49,27 +49,27 @@ DEFINE PAD Window OF _MSYSMENU PROMPT "\<Window" COLOR SCHEME 3 ;
 DEFINE PAD Help OF _MSYSMENU PROMPT "\<Help" COLOR SCHEME 3 ;
 	KEY ALT+H, "ALT+H" ;
 	MESSAGE "Displays help on Tastrade"
-DEFINE PAD _4fw1d5yhc OF _MSYSMENU PROMPT "Customer" COLOR SCHEME 3 ;
+DEFINE PAD _4g117zlla OF _MSYSMENU PROMPT "Customer" COLOR SCHEME 3 ;
 	KEY ALT+C, ""
-DEFINE PAD _4fw1d5yhd OF _MSYSMENU PROMPT "Sales" COLOR SCHEME 3 ;
+DEFINE PAD _4g117zllb OF _MSYSMENU PROMPT "Sales" COLOR SCHEME 3 ;
 	KEY ALT+S, ""
-DEFINE PAD _4fw1d5yhe OF _MSYSMENU PROMPT "Prod/WIP" COLOR SCHEME 3 ;
+DEFINE PAD _4g117zllc OF _MSYSMENU PROMPT "Prod/WIP" COLOR SCHEME 3 ;
 	KEY ALT+P, ""
-DEFINE PAD _4fw1d5yhf OF _MSYSMENU PROMPT "End Sheet/Supplement/PreFlight" COLOR SCHEME 3 ;
+DEFINE PAD _4g117zlld OF _MSYSMENU PROMPT "End Sheet/Supplement/PreFlight" COLOR SCHEME 3 ;
 	KEY ALT+E, ""
-DEFINE PAD _4fw1d5yhg OF _MSYSMENU PROMPT "Bids" COLOR SCHEME 3 ;
+DEFINE PAD _4g117zlle OF _MSYSMENU PROMPT "Bids" COLOR SCHEME 3 ;
 	KEY ALT+B, ""
-DEFINE PAD _4fw1d5yhh OF _MSYSMENU PROMPT "Bar Code" COLOR SCHEME 3 ;
+DEFINE PAD _4g117zllf OF _MSYSMENU PROMPT "Bar Code" COLOR SCHEME 3 ;
 	KEY ALT+B, ""
-DEFINE PAD _4fw1d5yhi OF _MSYSMENU PROMPT "FoxFire" COLOR SCHEME 3 ;
+DEFINE PAD _4g117zllg OF _MSYSMENU PROMPT "FoxFire" COLOR SCHEME 3 ;
 	KEY ALT+F, ""
-DEFINE PAD _4fw1d5yhj OF _MSYSMENU PROMPT "StoneField" COLOR SCHEME 3 ;
+DEFINE PAD _4g117zllh OF _MSYSMENU PROMPT "StoneField" COLOR SCHEME 3 ;
 	KEY ALT+S, ""
-DEFINE PAD _4fw1d5yhk OF _MSYSMENU PROMPT "Custom Reports/Labels" COLOR SCHEME 3 ;
+DEFINE PAD _4g117zlli OF _MSYSMENU PROMPT "Custom Reports/Labels" COLOR SCHEME 3 ;
 	KEY ALT+C, ""
-DEFINE PAD _4fw1d5yhl OF _MSYSMENU PROMPT "UPS/FedEx" COLOR SCHEME 3 ;
+DEFINE PAD _4g117zllj OF _MSYSMENU PROMPT "UPS/FedEx" COLOR SCHEME 3 ;
 	KEY ALT+U, ""
-DEFINE PAD _4fw1d5yhm OF _MSYSMENU PROMPT "Online Forms" COLOR SCHEME 3 ;
+DEFINE PAD _4g117zllk OF _MSYSMENU PROMPT "Online Forms" COLOR SCHEME 3 ;
 	KEY ALT+O, ""
 ON PAD Pad OF _MSYSMENU ACTIVATE POPUP file
 ON PAD Edit OF _MSYSMENU ACTIVATE POPUP edit
@@ -78,23 +78,23 @@ ON PAD Tools OF _MSYSMENU ACTIVATE POPUP tools
 ON PAD Developer OF _MSYSMENU ACTIVATE POPUP developer
 ON PAD Window OF _MSYSMENU ACTIVATE POPUP window
 ON PAD Help OF _MSYSMENU ACTIVATE POPUP help
-ON PAD _4fw1d5yhc OF _MSYSMENU ACTIVATE POPUP customer
-ON PAD _4fw1d5yhd OF _MSYSMENU ACTIVATE POPUP sales
-ON SELECTION PAD _4fw1d5yhe OF _MSYSMENU ;
-	DO _4fw1d5yhn ;
+ON PAD _4g117zlla OF _MSYSMENU ACTIVATE POPUP customer
+ON PAD _4g117zllb OF _MSYSMENU ACTIVATE POPUP sales
+ON SELECTION PAD _4g117zllc OF _MSYSMENU ;
+	DO _4g117zlll ;
 	IN LOCFILE("\MBC5\SOURCE\ITMENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is ITMENU?")
-ON SELECTION PAD _4fw1d5yhf OF _MSYSMENU ;
-	DO _4fw1d5yho ;
+ON SELECTION PAD _4g117zlld OF _MSYSMENU ;
+	DO _4g117zllm ;
 	IN LOCFILE("\MBC5\SOURCE\ITMENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is ITMENU?")
-ON PAD _4fw1d5yhg OF _MSYSMENU ACTIVATE POPUP bids
-ON PAD _4fw1d5yhh OF _MSYSMENU ACTIVATE POPUP barcode
-ON SELECTION PAD _4fw1d5yhi OF _MSYSMENU ;
-	DO _4fw1d5yhp ;
+ON PAD _4g117zlle OF _MSYSMENU ACTIVATE POPUP bids
+ON PAD _4g117zllf OF _MSYSMENU ACTIVATE POPUP barcode
+ON SELECTION PAD _4g117zllg OF _MSYSMENU ;
+	DO _4g117zlln ;
 	IN LOCFILE("\MBC5\SOURCE\ITMENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is ITMENU?")
-ON PAD _4fw1d5yhj OF _MSYSMENU ACTIVATE POPUP stonefield
-ON PAD _4fw1d5yhk OF _MSYSMENU ACTIVATE POPUP customrepo
-ON PAD _4fw1d5yhl OF _MSYSMENU ACTIVATE POPUP upsfedex
-ON PAD _4fw1d5yhm OF _MSYSMENU ACTIVATE POPUP onlineform
+ON PAD _4g117zllh OF _MSYSMENU ACTIVATE POPUP stonefield
+ON PAD _4g117zlli OF _MSYSMENU ACTIVATE POPUP customrepo
+ON PAD _4g117zllj OF _MSYSMENU ACTIVATE POPUP upsfedex
+ON PAD _4g117zllk OF _MSYSMENU ACTIVATE POPUP onlineform
 
 DEFINE POPUP file MARGIN RELATIVE SHADOW COLOR SCHEME 4
 DEFINE BAR 1 OF file PROMPT "\<Open" ;
@@ -108,14 +108,14 @@ DEFINE BAR 6 OF file PROMPT "\-"
 DEFINE BAR 7 OF file PROMPT "E\<xit"
 DEFINE BAR 8 OF file PROMPT "\<Return to FoxPro"
 ON SELECTION BAR 2 OF file ;
-	DO _4fw1d5yhq ;
+	DO _4g117zllo ;
 	IN LOCFILE("\MBC5\SOURCE\ITMENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is ITMENU?")
 ON SELECTION BAR 5 OF file =SYS(1037)
 ON SELECTION BAR 7 OF file ;
-	DO _4fw1d5yhr ;
+	DO _4g117zllp ;
 	IN LOCFILE("\MBC5\SOURCE\ITMENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is ITMENU?")
 ON SELECTION BAR 8 OF file ;
-	DO _4fw1d5yhs ;
+	DO _4g117zllq ;
 	IN LOCFILE("\MBC5\SOURCE\ITMENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is ITMENU?")
 
 DEFINE POPUP edit MARGIN RELATIVE SHADOW COLOR SCHEME 4
@@ -161,34 +161,34 @@ DEFINE BAR 12 OF record PROMPT "\<Revert" ;
 DEFINE BAR 13 OF record PROMPT "\-"
 DEFINE BAR 14 OF record PROMPT "Show Toolbar"
 ON SELECTION BAR 1 OF record ;
-	DO _4fw1d5yht ;
+	DO _4g117zllr ;
 	IN LOCFILE("\MBC5\SOURCE\ITMENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is ITMENU?")
 ON SELECTION BAR 2 OF record ;
-	DO _4fw1d5yhu ;
+	DO _4g117zlls ;
 	IN LOCFILE("\MBC5\SOURCE\ITMENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is ITMENU?")
 ON SELECTION BAR 3 OF record ;
-	DO _4fw1d5yhv ;
+	DO _4g117zllt ;
 	IN LOCFILE("\MBC5\SOURCE\ITMENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is ITMENU?")
 ON SELECTION BAR 4 OF record ;
-	DO _4fw1d5yhw ;
+	DO _4g117zllu ;
 	IN LOCFILE("\MBC5\SOURCE\ITMENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is ITMENU?")
 ON SELECTION BAR 6 OF record ;
-	DO _4fw1d5yhx ;
+	DO _4g117zllv ;
 	IN LOCFILE("\MBC5\SOURCE\ITMENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is ITMENU?")
 ON SELECTION BAR 8 OF record ;
-	DO _4fw1d5yhy ;
+	DO _4g117zllw ;
 	IN LOCFILE("\MBC5\SOURCE\ITMENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is ITMENU?")
 ON SELECTION BAR 9 OF record ;
-	DO _4fw1d5yhz ;
+	DO _4g117zllx ;
 	IN LOCFILE("\MBC5\SOURCE\ITMENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is ITMENU?")
 ON SELECTION BAR 11 OF record ;
-	DO _4fw1d5yi0 ;
+	DO _4g117zlly ;
 	IN LOCFILE("\MBC5\SOURCE\ITMENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is ITMENU?")
 ON SELECTION BAR 12 OF record ;
-	DO _4fw1d5yi1 ;
+	DO _4g117zllz ;
 	IN LOCFILE("\MBC5\SOURCE\ITMENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is ITMENU?")
 ON SELECTION BAR 14 OF record ;
-	DO _4fw1d5yi2 ;
+	DO _4g117zlm0 ;
 	IN LOCFILE("\MBC5\SOURCE\ITMENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is ITMENU?")
 
 DEFINE POPUP tools MARGIN RELATIVE SHADOW COLOR SCHEME 4
@@ -291,10 +291,10 @@ ON SELECTION BAR 4 OF datamainte do form deptcode
 ON SELECTION BAR 5 OF datamainte do form scanedit
 ON SELECTION BAR 6 OF datamainte do form bookoptions
 ON SELECTION BAR 7 OF datamainte ;
-	DO _4fw1d5yi3 ;
+	DO _4g117zlm1 ;
 	IN LOCFILE("\MBC5\SOURCE\ITMENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is ITMENU?")
 ON SELECTION BAR 8 OF datamainte ;
-	DO _4fw1d5yi4 ;
+	DO _4g117zlm2 ;
 	IN LOCFILE("\MBC5\SOURCE\ITMENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is ITMENU?")
 ON SELECTION BAR 9 OF datamainte do form clrpglk
 ON SELECTION BAR 10 OF datamainte do form wipgdata
@@ -462,7 +462,7 @@ DEFINE BAR 6 OF help PROMPT "\<About ..." ;
 	MESSAGE "Displays information about this application"
 DEFINE BAR 7 OF help PROMPT "About Me\<mory Book..."
 ON SELECTION BAR 6 OF help ;
-	DO _4fw1d5yi5 ;
+	DO _4g117zlm3 ;
 	IN LOCFILE("\MBC5\SOURCE\ITMENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is ITMENU?")
 
 DEFINE POPUP customer MARGIN RELATIVE SHADOW COLOR SCHEME 4
@@ -473,16 +473,16 @@ DEFINE BAR 4 OF customer PROMPT "Receiving/Problems/Survey/Compensation" ;
 	SKIP FOR oapp.schoolform=.f.
 DEFINE BAR 5 OF customer PROMPT "Shipping List for FedEx/UPS"
 ON SELECTION BAR 1 OF customer ;
-	DO _4fw1d5yi6 ;
+	DO _4g117zlm4 ;
 	IN LOCFILE("\MBC5\SOURCE\ITMENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is ITMENU?")
 ON SELECTION BAR 2 OF customer ;
-	DO _4fw1d5yi7 ;
+	DO _4g117zlm5 ;
 	IN LOCFILE("\MBC5\SOURCE\ITMENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is ITMENU?")
 ON SELECTION BAR 4 OF customer ;
-	DO _4fw1d5yi8 ;
+	DO _4g117zlm6 ;
 	IN LOCFILE("\MBC5\SOURCE\ITMENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is ITMENU?")
 ON SELECTION BAR 5 OF customer ;
-	DO _4fw1d5yi9 ;
+	DO _4g117zlm7 ;
 	IN LOCFILE("\MBC5\SOURCE\ITMENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is ITMENU?")
 
 DEFINE POPUP sales MARGIN RELATIVE SHADOW COLOR SCHEME 4
@@ -497,18 +497,18 @@ DEFINE BAR 8 OF sales PROMPT "Prime Sales"
 DEFINE BAR 9 OF sales PROMPT "Receipt Emails" ;
 	SKIP FOR oapp.ccdpermlev!="AAAAB"
 ON SELECTION BAR 1 OF sales ;
-	DO _4fw1d5yia ;
+	DO _4g117zlm8 ;
 	IN LOCFILE("\MBC5\SOURCE\ITMENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is ITMENU?")
 ON SELECTION BAR 2 OF sales ;
-	DO _4fw1d5yib ;
+	DO _4g117zlm9 ;
 	IN LOCFILE("\MBC5\SOURCE\ITMENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is ITMENU?")
 ON SELECTION BAR 3 OF sales do form invoiceinq
 ON SELECTION BAR 4 OF sales do form merinvoiceinq
 ON SELECTION BAR 7 OF sales ;
-	DO _4fw1d5yic ;
+	DO _4g117zlma ;
 	IN LOCFILE("\MBC5\SOURCE\ITMENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is ITMENU?")
 ON SELECTION BAR 8 OF sales ;
-	DO _4fw1d5yid ;
+	DO _4g117zlmb ;
 	IN LOCFILE("\MBC5\SOURCE\ITMENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is ITMENU?")
 ON SELECTION BAR 9 OF sales do form paymentquery
 
@@ -519,19 +519,19 @@ DEFINE BAR 3 OF bids PROMPT "Custom Bids"
 DEFINE BAR 4 OF bids PROMPT "Custom Meridian Bid"
 DEFINE BAR 5 OF bids PROMPT "Prime Bid"
 ON SELECTION BAR 1 OF bids ;
-	DO _4fw1d5yie ;
+	DO _4g117zlmc ;
 	IN LOCFILE("\MBC5\SOURCE\ITMENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is ITMENU?")
 ON SELECTION BAR 2 OF bids ;
-	DO _4fw1d5yif ;
+	DO _4g117zlmd ;
 	IN LOCFILE("\MBC5\SOURCE\ITMENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is ITMENU?")
 ON SELECTION BAR 3 OF bids ;
-	DO _4fw1d5yig ;
+	DO _4g117zlme ;
 	IN LOCFILE("\MBC5\SOURCE\ITMENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is ITMENU?")
 ON SELECTION BAR 4 OF bids ;
-	DO _4fw1d5yih ;
+	DO _4g117zlmf ;
 	IN LOCFILE("\MBC5\SOURCE\ITMENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is ITMENU?")
 ON SELECTION BAR 5 OF bids ;
-	DO _4fw1d5yii ;
+	DO _4g117zlmg ;
 	IN LOCFILE("\MBC5\SOURCE\ITMENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is ITMENU?")
 
 DEFINE POPUP barcode MARGIN RELATIVE SHADOW COLOR SCHEME 4
@@ -547,37 +547,37 @@ DEFINE BAR 9 OF barcode PROMPT "Supplement Label"
 DEFINE BAR 10 OF barcode PROMPT "Year Book Label"
 ON SELECTION BAR 1 OF barcode do form BarScan
 ON SELECTION BAR 2 OF barcode ;
-	DO _4fw1d5yij ;
+	DO _4g117zlmh ;
 	IN LOCFILE("\MBC5\SOURCE\ITMENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is ITMENU?")
 ON SELECTION BAR 3 OF barcode ;
-	DO _4fw1d5yik ;
+	DO _4g117zlmi ;
 	IN LOCFILE("\MBC5\SOURCE\ITMENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is ITMENU?")
 ON SELECTION BAR 4 OF barcode ;
-	DO _4fw1d5yil ;
+	DO _4g117zlmj ;
 	IN LOCFILE("\MBC5\SOURCE\ITMENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is ITMENU?")
 ON SELECTION BAR 5 OF barcode ;
-	DO _4fw1d5yim ;
+	DO _4g117zlmk ;
 	IN LOCFILE("\MBC5\SOURCE\ITMENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is ITMENU?")
 ON SELECTION BAR 6 OF barcode ;
-	DO _4fw1d5yin ;
+	DO _4g117zlml ;
 	IN LOCFILE("\MBC5\SOURCE\ITMENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is ITMENU?")
 ON SELECTION BAR 7 OF barcode ;
-	DO _4fw1d5yio ;
+	DO _4g117zlmm ;
 	IN LOCFILE("\MBC5\SOURCE\ITMENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is ITMENU?")
 ON SELECTION BAR 8 OF barcode ;
-	DO _4fw1d5yip ;
+	DO _4g117zlmn ;
 	IN LOCFILE("\MBC5\SOURCE\ITMENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is ITMENU?")
 ON SELECTION BAR 9 OF barcode ;
-	DO _4fw1d5yiq ;
+	DO _4g117zlmo ;
 	IN LOCFILE("\MBC5\SOURCE\ITMENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is ITMENU?")
 ON SELECTION BAR 10 OF barcode ;
-	DO _4fw1d5yir ;
+	DO _4g117zlmp ;
 	IN LOCFILE("\MBC5\SOURCE\ITMENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is ITMENU?")
 
 DEFINE POPUP stonefield MARGIN RELATIVE SHADOW COLOR SCHEME 4
 DEFINE BAR 1 OF stonefield PROMPT "Reports"
 ON SELECTION BAR 1 OF stonefield ;
-	DO _4fw1d5yis ;
+	DO _4g117zlmq ;
 	IN LOCFILE("\MBC5\SOURCE\ITMENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is ITMENU?")
 
 DEFINE POPUP customrepo MARGIN RELATIVE SHADOW COLOR SCHEME 4
@@ -592,24 +592,24 @@ DEFINE BAR 8 OF customrepo PROMPT "Individual Shipping Labels"
 DEFINE BAR 9 OF customrepo PROMPT "Online Orders"
 DEFINE BAR 10 OF customrepo PROMPT "Receiving Label"
 ON SELECTION BAR 1 OF customrepo ;
-	DO _4fw1d5yit ;
+	DO _4g117zlmr ;
 	IN LOCFILE("\MBC5\SOURCE\ITMENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is ITMENU?")
 ON SELECTION BAR 2 OF customrepo ;
-	DO _4fw1d5yiu ;
+	DO _4g117zlms ;
 	IN LOCFILE("\MBC5\SOURCE\ITMENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is ITMENU?")
 ON SELECTION BAR 3 OF customrepo ;
-	DO _4fw1d5yiv ;
+	DO _4g117zlmt ;
 	IN LOCFILE("\MBC5\SOURCE\ITMENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is ITMENU?")
 ON SELECTION BAR 4 OF customrepo do form barcd
 ON BAR 5 OF customrepo ACTIVATE POPUP production
 ON SELECTION BAR 6 OF customrepo do form rebookinvoice
 ON SELECTION BAR 7 OF customrepo ;
-	DO _4fw1d5yiw ;
+	DO _4g117zlmu ;
 	IN LOCFILE("\MBC5\SOURCE\ITMENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is ITMENU?")
 ON SELECTION BAR 8 OF customrepo do form mysqlshippinglabels
 ON SELECTION BAR 9 OF customrepo do form mysqlpayments
 ON SELECTION BAR 10 OF customrepo ;
-	DO _4fw1d5yix ;
+	DO _4g117zlmv ;
 	IN LOCFILE("\MBC5\SOURCE\ITMENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is ITMENU?")
 
 DEFINE POPUP production MARGIN RELATIVE SHADOW COLOR SCHEME 4
@@ -635,7 +635,7 @@ ON SELECTION BAR 2 OF onlineform do form MBCOnlinePay
 
 ON SELECTION POPUP file 
 ON SELECTION POPUP record ;
-	DO _4fw1d5yiy ;
+	DO _4g117zlmw ;
 	IN LOCFILE("\MBC5\SOURCE\ITMENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is ITMENU?")
 
 *       *********************************************************
@@ -726,7 +726,7 @@ endcase
 
 *       *********************************************************
 *       *                                                         
-*       * _4FW1D5YHN  ON SELECTION PAD                            
+*       * _4G117ZLLL  ON SELECTION PAD                            
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -737,7 +737,7 @@ endcase
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4fw1d5yhn
+PROCEDURE _4g117zlll
 **
 
 if type("_screen.activeform.name")="C"
@@ -771,7 +771,7 @@ endif
 
 *       *********************************************************
 *       *                                                         
-*       * _4FW1D5YHO  ON SELECTION PAD                            
+*       * _4G117ZLLM  ON SELECTION PAD                            
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -782,7 +782,7 @@ endif
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4fw1d5yho
+PROCEDURE _4g117zllm
 if type("_screen.activeform.name")="C"
 if _screen.activeform.name='SALE' .or. _screen.activeform.name='RECVSURV';
 .or. _screen.activeform.name='PRODUCTION' .or. _screen.activeform.name='FRMBIDS';
@@ -811,7 +811,7 @@ endif
 
 *       *********************************************************
 *       *                                                         
-*       * _4FW1D5YHP  ON SELECTION PAD                            
+*       * _4G117ZLLN  ON SELECTION PAD                            
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -822,7 +822,7 @@ endif
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4fw1d5yhp
+PROCEDURE _4g117zlln
 *!*	&&newfoxfire
 *!*	winopen=IIF(CNTBAR('Window')>0,.t.,.f.)
 *!*	IF winopen=.t.
@@ -866,7 +866,7 @@ SET RESOURCE to
 
 *       *********************************************************
 *       *                                                         
-*       * _4FW1D5YHQ  ON SELECTION BAR 2 OF POPUP file            
+*       * _4G117ZLLO  ON SELECTION BAR 2 OF POPUP file            
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -877,7 +877,7 @@ SET RESOURCE to
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4fw1d5yhq
+PROCEDURE _4g117zllo
 *
 if type("_screen.activeform")="O"
 
@@ -888,7 +888,7 @@ endif
 
 *       *********************************************************
 *       *                                                         
-*       * _4FW1D5YHR  ON SELECTION BAR 7 OF POPUP file            
+*       * _4G117ZLLP  ON SELECTION BAR 7 OF POPUP file            
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -899,7 +899,7 @@ endif
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4fw1d5yhr
+PROCEDURE _4g117zllp
 oEnv.cTypeExit = "OS"
 quit
 *!*	oApp.cleanup()
@@ -909,7 +909,7 @@ quit
 
 *       *********************************************************
 *       *                                                         
-*       * _4FW1D5YHS  ON SELECTION BAR 8 OF POPUP file            
+*       * _4G117ZLLQ  ON SELECTION BAR 8 OF POPUP file            
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -920,7 +920,7 @@ quit
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4fw1d5yhs
+PROCEDURE _4g117zllq
 
 
 oEnv.cTypeExit = "VFP"
@@ -931,7 +931,7 @@ rele oApp
 
 *       *********************************************************
 *       *                                                         
-*       * _4FW1D5YHT  ON SELECTION BAR 1 OF POPUP record          
+*       * _4G117ZLLR  ON SELECTION BAR 1 OF POPUP record          
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -942,7 +942,7 @@ rele oApp
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4fw1d5yht
+PROCEDURE _4g117zllr
 if type("_screen.activeform") = "O"
  _screen.activeform.next()
 else
@@ -953,7 +953,7 @@ endif
 
 *       *********************************************************
 *       *                                                         
-*       * _4FW1D5YHU  ON SELECTION BAR 2 OF POPUP record          
+*       * _4G117ZLLS  ON SELECTION BAR 2 OF POPUP record          
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -964,7 +964,7 @@ endif
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4fw1d5yhu
+PROCEDURE _4g117zlls
 if type("_screen.activeform") = "O"
  _screen.activeform.previous()
 else
@@ -975,7 +975,7 @@ endif
 
 *       *********************************************************
 *       *                                                         
-*       * _4FW1D5YHV  ON SELECTION BAR 3 OF POPUP record          
+*       * _4G117ZLLT  ON SELECTION BAR 3 OF POPUP record          
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -986,7 +986,7 @@ endif
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4fw1d5yhv
+PROCEDURE _4g117zllt
 if type("_screen.activeform") = "O"
  _screen.activeform.first()
 else
@@ -997,7 +997,7 @@ endif
 
 *       *********************************************************
 *       *                                                         
-*       * _4FW1D5YHW  ON SELECTION BAR 4 OF POPUP record          
+*       * _4G117ZLLU  ON SELECTION BAR 4 OF POPUP record          
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -1008,7 +1008,7 @@ endif
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4fw1d5yhw
+PROCEDURE _4g117zllu
 if type("_screen.activeform") = "O"
  _screen.activeform.last()
 else
@@ -1019,7 +1019,7 @@ endif
 
 *       *********************************************************
 *       *                                                         
-*       * _4FW1D5YHX  ON SELECTION BAR 6 OF POPUP record          
+*       * _4G117ZLLV  ON SELECTION BAR 6 OF POPUP record          
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -1030,7 +1030,7 @@ endif
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4fw1d5yhx
+PROCEDURE _4g117zllv
 if type("_screen.activeform") = "O"
  _screen.activeform.search()
 else
@@ -1041,7 +1041,7 @@ endif
 
 *       *********************************************************
 *       *                                                         
-*       * _4FW1D5YHY  ON SELECTION BAR 8 OF POPUP record          
+*       * _4G117ZLLW  ON SELECTION BAR 8 OF POPUP record          
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -1052,7 +1052,7 @@ endif
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4fw1d5yhy
+PROCEDURE _4g117zllw
 if type("_screen.activeform") = "O"
  _screen.activeform.add()
 else
@@ -1063,7 +1063,7 @@ endif
 
 *       *********************************************************
 *       *                                                         
-*       * _4FW1D5YHZ  ON SELECTION BAR 9 OF POPUP record          
+*       * _4G117ZLLX  ON SELECTION BAR 9 OF POPUP record          
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -1074,7 +1074,7 @@ endif
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4fw1d5yhz
+PROCEDURE _4g117zllx
 if type("_screen.activeform") = "O"
  _screen.activeform.delete()
 else
@@ -1085,7 +1085,7 @@ endif
 
 *       *********************************************************
 *       *                                                         
-*       * _4FW1D5YI0  ON SELECTION BAR 11 OF POPUP record         
+*       * _4G117ZLLY  ON SELECTION BAR 11 OF POPUP record         
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -1096,7 +1096,7 @@ endif
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4fw1d5yi0
+PROCEDURE _4g117zlly
 if type("_screen.activeform") = "O"
  _screen.activeform.save()
 else
@@ -1107,7 +1107,7 @@ endif
 
 *       *********************************************************
 *       *                                                         
-*       * _4FW1D5YI1  ON SELECTION BAR 12 OF POPUP record         
+*       * _4G117ZLLZ  ON SELECTION BAR 12 OF POPUP record         
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -1118,7 +1118,7 @@ endif
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4fw1d5yi1
+PROCEDURE _4g117zllz
 if type("_screen.activeform") = "O"
  _screen.activeform.revert()
 else
@@ -1129,7 +1129,7 @@ endif
 
 *       *********************************************************
 *       *                                                         
-*       * _4FW1D5YI2  ON SELECTION BAR 14 OF POPUP record         
+*       * _4G117ZLM0  ON SELECTION BAR 14 OF POPUP record         
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -1140,7 +1140,7 @@ endif
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4fw1d5yi2
+PROCEDURE _4g117zlm0
 if isnull(oApp.oToolbar)
  oApp.oToolbar = createobject(_screen.activeform.cToolBar)
  oApp.oToolbar.show()
@@ -1152,7 +1152,7 @@ endif
 
 *       *********************************************************
 *       *                                                         
-*       * _4FW1D5YI3  ON SELECTION BAR 7 OF POPUP datamainte      
+*       * _4G117ZLM1  ON SELECTION BAR 7 OF POPUP datamainte      
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -1163,7 +1163,7 @@ endif
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4fw1d5yi3
+PROCEDURE _4g117zlm1
 TRY
 m.invid=_screen.activeform.invid
 m.company=_screen.activeform.company
@@ -1177,7 +1177,7 @@ do form prodchng WITH m.invid,m.company
 
 *       *********************************************************
 *       *                                                         
-*       * _4FW1D5YI4  ON SELECTION BAR 8 OF POPUP datamainte      
+*       * _4G117ZLM2  ON SELECTION BAR 8 OF POPUP datamainte      
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -1188,7 +1188,7 @@ do form prodchng WITH m.invid,m.company
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4fw1d5yi4
+PROCEDURE _4g117zlm2
 cMessageTitle = 'Clear Shipping Memo Field'
 cMessageText = 'All Shipping Memos will be cleared! Continue?'
 nDialogType = 4 + 32 + 256
@@ -1215,7 +1215,7 @@ endif
 
 *       *********************************************************
 *       *                                                         
-*       * _4FW1D5YI5  ON SELECTION BAR 6 OF POPUP help            
+*       * _4G117ZLM3  ON SELECTION BAR 6 OF POPUP help            
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -1226,7 +1226,7 @@ endif
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4fw1d5yi5
+PROCEDURE _4g117zlm3
 DIMENSION adesktopversion[1]
 AGETFILEVERSION(adesktopversion,"C:\Mbc5\mbc5.EXE")
 desktopversion= adesktopversion[4]
@@ -1235,7 +1235,7 @@ WAIT WINDOW "MBC5 Version "+desktopversion
 
 *       *********************************************************
 *       *                                                         
-*       * _4FW1D5YI6  ON SELECTION BAR 1 OF POPUP customer        
+*       * _4G117ZLM4  ON SELECTION BAR 1 OF POPUP customer        
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -1246,7 +1246,7 @@ WAIT WINDOW "MBC5 Version "+desktopversion
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4fw1d5yi6
+PROCEDURE _4g117zlm4
 
 if type("_screen.activeform.name")="C"
 if _screen.activeform.name='SALE' .or. _screen.activeform.name='RECVSURV';
@@ -1269,7 +1269,7 @@ endif
 
 *       *********************************************************
 *       *                                                         
-*       * _4FW1D5YI7  ON SELECTION BAR 2 OF POPUP customer        
+*       * _4G117ZLM5  ON SELECTION BAR 2 OF POPUP customer        
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -1280,7 +1280,7 @@ endif
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4fw1d5yi7
+PROCEDURE _4g117zlm5
 if type("_screen.activeform.name")="C"
 if _screen.activeform.name='SALE' .or. _screen.activeform.name='RECVSURV';
 .or. _screen.activeform.name='PRODUCTION' .or. _screen.activeform.name='FRMBIDS'
@@ -1302,7 +1302,7 @@ endif
 
 *       *********************************************************
 *       *                                                         
-*       * _4FW1D5YI8  ON SELECTION BAR 4 OF POPUP customer        
+*       * _4G117ZLM6  ON SELECTION BAR 4 OF POPUP customer        
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -1313,7 +1313,7 @@ endif
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4fw1d5yi8
+PROCEDURE _4g117zlm6
 if type("_screen.activeform.name")="C"
 if _screen.activeform.name='SCHOOL' .or. _screen.activeform.name='PAYMENT';
 .or. _screen.activeform.name='PRODUCTION' .or. _screen.activeform.name='FRMBIDS';
@@ -1339,7 +1339,7 @@ endif
 
 *       *********************************************************
 *       *                                                         
-*       * _4FW1D5YI9  ON SELECTION BAR 5 OF POPUP customer        
+*       * _4G117ZLM7  ON SELECTION BAR 5 OF POPUP customer        
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -1350,14 +1350,14 @@ endif
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4fw1d5yi9
+PROCEDURE _4g117zlm7
 do form shiplist
 
 
 
 *       *********************************************************
 *       *                                                         
-*       * _4FW1D5YIA  ON SELECTION BAR 1 OF POPUP sales           
+*       * _4G117ZLM8  ON SELECTION BAR 1 OF POPUP sales           
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -1368,7 +1368,7 @@ do form shiplist
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4fw1d5yia
+PROCEDURE _4g117zlm8
 
 nogo=.T.
 If Type("_screen.activeform.name")="C"
@@ -1410,7 +1410,7 @@ Endif
 
 *       *********************************************************
 *       *                                                         
-*       * _4FW1D5YIB  ON SELECTION BAR 2 OF POPUP sales           
+*       * _4G117ZLM9  ON SELECTION BAR 2 OF POPUP sales           
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -1421,7 +1421,7 @@ Endif
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4fw1d5yib
+PROCEDURE _4g117zlm9
 
 nogo=.T.
 If Type("_screen.activeform.name")="C"
@@ -1461,7 +1461,7 @@ Endif
 
 *       *********************************************************
 *       *                                                         
-*       * _4FW1D5YIC  ON SELECTION BAR 7 OF POPUP sales           
+*       * _4G117ZLMA  ON SELECTION BAR 7 OF POPUP sales           
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -1472,7 +1472,7 @@ Endif
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4fw1d5yic
+PROCEDURE _4g117zlma
 if type("_screen.activeform.name")="C"
 if _screen.activeform.name='SCHOOL' .or. _screen.activeform.name='PAYMENT';
 .or. _screen.activeform.name='PRODUCTION' .or. _screen.activeform.name='FRMBIDS';
@@ -1500,7 +1500,7 @@ endif
 
 *       *********************************************************
 *       *                                                         
-*       * _4FW1D5YID  ON SELECTION BAR 8 OF POPUP sales           
+*       * _4G117ZLMB  ON SELECTION BAR 8 OF POPUP sales           
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -1511,7 +1511,7 @@ endif
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4fw1d5yid
+PROCEDURE _4g117zlmb
 
 nogo=.T.
 If Type("_screen.activeform.name")="C"
@@ -1551,7 +1551,7 @@ Endif
 
 *       *********************************************************
 *       *                                                         
-*       * _4FW1D5YIE  ON SELECTION BAR 1 OF POPUP bids            
+*       * _4G117ZLMC  ON SELECTION BAR 1 OF POPUP bids            
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -1562,7 +1562,7 @@ Endif
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4fw1d5yie
+PROCEDURE _4g117zlmc
 
 nogo=.T.
 If Type("_screen.activeform.name")="C"
@@ -1620,7 +1620,7 @@ Endif
 
 *       *********************************************************
 *       *                                                         
-*       * _4FW1D5YIF  ON SELECTION BAR 2 OF POPUP bids            
+*       * _4G117ZLMD  ON SELECTION BAR 2 OF POPUP bids            
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -1631,7 +1631,7 @@ Endif
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4fw1d5yif
+PROCEDURE _4g117zlmd
 
 nogo=.T.
 If Type("_screen.activeform.name")="C"
@@ -1674,7 +1674,7 @@ Endif
 
 *       *********************************************************
 *       *                                                         
-*       * _4FW1D5YIG  ON SELECTION BAR 3 OF POPUP bids            
+*       * _4G117ZLME  ON SELECTION BAR 3 OF POPUP bids            
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -1685,7 +1685,7 @@ Endif
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4fw1d5yig
+PROCEDURE _4g117zlme
 
 if type("_screen.activeform.name")="C"
 if _screen.activeform.name='SCHOOL' .or. _screen.activeform.name='SALE';
@@ -1708,7 +1708,7 @@ endif
 
 *       *********************************************************
 *       *                                                         
-*       * _4FW1D5YIH  ON SELECTION BAR 4 OF POPUP bids            
+*       * _4G117ZLMF  ON SELECTION BAR 4 OF POPUP bids            
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -1719,7 +1719,7 @@ endif
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4fw1d5yih
+PROCEDURE _4g117zlmf
 if type("_screen.activeform.name")="C"
 if _screen.activeform.name='SCHOOL' .or. _screen.activeform.name='SALE';
 .or. _screen.activeform.name='PRODUCTION' .or. _screen.activeform.name='PAYMENTS';
@@ -1741,7 +1741,7 @@ endif
 
 *       *********************************************************
 *       *                                                         
-*       * _4FW1D5YII  ON SELECTION BAR 5 OF POPUP bids            
+*       * _4G117ZLMG  ON SELECTION BAR 5 OF POPUP bids            
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -1752,7 +1752,7 @@ endif
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4fw1d5yii
+PROCEDURE _4g117zlmg
 
 if type("_screen.activeform.name")="C"
 if _screen.activeform.name='SCHOOL' .or. _screen.activeform.name='SALE';
@@ -1774,7 +1774,7 @@ endif
 
 *       *********************************************************
 *       *                                                         
-*       * _4FW1D5YIJ  ON SELECTION BAR 2 OF POPUP barcode         
+*       * _4G117ZLMH  ON SELECTION BAR 2 OF POPUP barcode         
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -1785,7 +1785,7 @@ endif
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4fw1d5yij
+PROCEDURE _4g117zlmh
 if type("_screen.activeform.name")="C"
 if _screen.activeform.name='PRODUCTION'
 m.sid=_screen.activeform.invid
@@ -1802,7 +1802,7 @@ endif
 
 *       *********************************************************
 *       *                                                         
-*       * _4FW1D5YIK  ON SELECTION BAR 3 OF POPUP barcode         
+*       * _4G117ZLMI  ON SELECTION BAR 3 OF POPUP barcode         
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -1813,7 +1813,7 @@ endif
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4fw1d5yik
+PROCEDURE _4g117zlmi
 if type("_screen.activeform.name")="C" &&1
 if _screen.activeform.name='ENDSUP'&&2
 _screen.activeform.prntendsheetlbl
@@ -1834,7 +1834,7 @@ endif&&1
 
 *       *********************************************************
 *       *                                                         
-*       * _4FW1D5YIL  ON SELECTION BAR 4 OF POPUP barcode         
+*       * _4G117ZLMJ  ON SELECTION BAR 4 OF POPUP barcode         
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -1845,7 +1845,7 @@ endif&&1
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4fw1d5yil
+PROCEDURE _4g117zlmj
 
 if type("_screen.activeform.name")="C"
 if _screen.activeform.name='PRODUCTION'
@@ -1866,7 +1866,7 @@ endif
 
 *       *********************************************************
 *       *                                                         
-*       * _4FW1D5YIM  ON SELECTION BAR 5 OF POPUP barcode         
+*       * _4G117ZLMK  ON SELECTION BAR 5 OF POPUP barcode         
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -1877,7 +1877,7 @@ endif
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4fw1d5yim
+PROCEDURE _4g117zlmk
 if type("_screen.activeform.name")="C"
 if _screen.activeform.name='PRODUCTION'
 *!*	if empty(_screen.activeform.pgfbase1.Page8.TxtRecvDte.value)
@@ -1898,7 +1898,7 @@ endif
 
 *       *********************************************************
 *       *                                                         
-*       * _4FW1D5YIN  ON SELECTION BAR 6 OF POPUP barcode         
+*       * _4G117ZLML  ON SELECTION BAR 6 OF POPUP barcode         
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -1909,7 +1909,7 @@ endif
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4fw1d5yin
+PROCEDURE _4g117zlml
 if type("_screen.activeform.name")="C"
 if _screen.activeform.name='SCHOOL'
 DO case
@@ -1937,7 +1937,7 @@ endif
 
 *       *********************************************************
 *       *                                                         
-*       * _4FW1D5YIO  ON SELECTION BAR 7 OF POPUP barcode         
+*       * _4G117ZLMM  ON SELECTION BAR 7 OF POPUP barcode         
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -1948,7 +1948,7 @@ endif
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4fw1d5yio
+PROCEDURE _4g117zlmm
 if type("_screen.activeform.name")="C"
 if _screen.activeform.name='PRODUCTION'
 m.sid=_screen.activeform.invid
@@ -1965,7 +1965,7 @@ endif
 
 *       *********************************************************
 *       *                                                         
-*       * _4FW1D5YIP  ON SELECTION BAR 8 OF POPUP barcode         
+*       * _4G117ZLMN  ON SELECTION BAR 8 OF POPUP barcode         
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -1976,7 +1976,7 @@ endif
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4fw1d5yip
+PROCEDURE _4g117zlmn
 
 if type("_screen.activeform.name")="C"
 if _screen.activeform.name='PRODUCTION'
@@ -2032,7 +2032,7 @@ ENDIF
 
 *       *********************************************************
 *       *                                                         
-*       * _4FW1D5YIQ  ON SELECTION BAR 9 OF POPUP barcode         
+*       * _4G117ZLMO  ON SELECTION BAR 9 OF POPUP barcode         
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -2043,7 +2043,7 @@ ENDIF
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4fw1d5yiq
+PROCEDURE _4g117zlmo
 if type("_screen.activeform.name")="C"
 
 if _screen.activeform.name='ENDSUP'
@@ -2061,7 +2061,7 @@ endif
 
 *       *********************************************************
 *       *                                                         
-*       * _4FW1D5YIR  ON SELECTION BAR 10 OF POPUP barcode        
+*       * _4G117ZLMP  ON SELECTION BAR 10 OF POPUP barcode        
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -2072,7 +2072,7 @@ endif
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4fw1d5yir
+PROCEDURE _4g117zlmp
 if type("_screen.activeform.name")="C"
 if _screen.activeform.name='PRODUCTION'
 _screen.ActiveForm.yearbooklabel
@@ -2085,7 +2085,7 @@ endif
 
 *       *********************************************************
 *       *                                                         
-*       * _4FW1D5YIS  ON SELECTION BAR 1 OF POPUP stonefield      
+*       * _4G117ZLMQ  ON SELECTION BAR 1 OF POPUP stonefield      
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -2096,7 +2096,7 @@ endif
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4fw1d5yis
+PROCEDURE _4g117zlmq
 *!*	IF INLIST(alltrim(oApp.cNaUser),"TAMMY","HILARY","HEATHER","STEVE")
 ! /N1 M:\MBC5\MBCREPORTS\SFQuery.exe
 *!*	ELSE
@@ -2107,7 +2107,7 @@ PROCEDURE _4fw1d5yis
 
 *       *********************************************************
 *       *                                                         
-*       * _4FW1D5YIT  ON SELECTION BAR 1 OF POPUP customrepo      
+*       * _4G117ZLMR  ON SELECTION BAR 1 OF POPUP customrepo      
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -2118,7 +2118,7 @@ PROCEDURE _4fw1d5yis
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4fw1d5yit
+PROCEDURE _4g117zlmr
 
 if type("_screen.activeform.name")="C"
 if _screen.activeform.name='SCHOOL'
@@ -2145,7 +2145,7 @@ endif
 
 *       *********************************************************
 *       *                                                         
-*       * _4FW1D5YIU  ON SELECTION BAR 2 OF POPUP customrepo      
+*       * _4G117ZLMS  ON SELECTION BAR 2 OF POPUP customrepo      
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -2156,7 +2156,7 @@ endif
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4fw1d5yiu
+PROCEDURE _4g117zlms
 if type("_screen.activeform.name")="C"
 if _screen.activeform.name='SCHOOL'
 m.sid=_screen.activeform.custid
@@ -2172,7 +2172,7 @@ endif
 
 *       *********************************************************
 *       *                                                         
-*       * _4FW1D5YIV  ON SELECTION BAR 3 OF POPUP customrepo      
+*       * _4G117ZLMT  ON SELECTION BAR 3 OF POPUP customrepo      
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -2183,7 +2183,7 @@ endif
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4fw1d5yiv
+PROCEDURE _4g117zlmt
 if type("_screen.activeform.name")="C"
 if _screen.activeform.name='SCHOOL'
 m.sid=_screen.activeform.custid
@@ -2201,7 +2201,7 @@ endif
 
 *       *********************************************************
 *       *                                                         
-*       * _4FW1D5YIW  ON SELECTION BAR 7 OF POPUP customrepo      
+*       * _4G117ZLMU  ON SELECTION BAR 7 OF POPUP customrepo      
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -2212,7 +2212,7 @@ endif
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4fw1d5yiw
+PROCEDURE _4g117zlmu
 
 If Type("_screen.activeform.name")="C"
 	If _Screen.ActiveForm.Name='PRODUCTION'
@@ -2231,7 +2231,7 @@ Endif
 
 *       *********************************************************
 *       *                                                         
-*       * _4FW1D5YIX  ON SELECTION BAR 10 OF POPUP customrepo     
+*       * _4G117ZLMV  ON SELECTION BAR 10 OF POPUP customrepo     
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -2242,7 +2242,7 @@ Endif
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4fw1d5yix
+PROCEDURE _4g117zlmv
 a=INPUTBOX("Number of labels needed.","Number of Labels","1")
 
 SET DECIMALS TO 0
@@ -2261,7 +2261,7 @@ SET DECIMALS TO 2
 
 *       *********************************************************
 *       *                                                         
-*       * _4FW1D5YIY  ON SELECTION POPUP record                   
+*       * _4G117ZLMW  ON SELECTION POPUP record                   
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -2271,7 +2271,7 @@ SET DECIMALS TO 2
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4fw1d5yiy
+PROCEDURE _4g117zlmw
 LOCAL lcCmd
 lcCmd = "oApp.oToolbar.cmd" + PROMPT() + ".Click()"
 &lcCmd
