@@ -1,6 +1,6 @@
 *       *********************************************************
 *       *                                                         
-*       * 09/15/15             OVERIDE.MPR              20:44:55  
+*       * 09/27/15             OVERIDE.MPR              21:49:20  
 *       *                                                         
 *       *********************************************************
 *       *                                                         
@@ -37,17 +37,17 @@ DEFINE BAR _med_paste OF shortcut PROMPT "\<Paste" ;
 	KEY CTRL+V, "Ctrl+V" ;
 	MESSAGE "Pastes the contents of the Clipboard"
 ON SELECTION BAR 1 OF shortcut ;
-	DO _4g318gzoi ;
+	DO _4gf1aswtn ;
 	IN LOCFILE("\MBC5\SOURCE\OVERIDE" ,"MPX;MPR|FXP;PRG" ,"WHERE is OVERIDE?")
 ON SELECTION BAR 2 OF shortcut ;
-	DO _4g318gzoj ;
+	DO _4gf1aswto ;
 	IN LOCFILE("\MBC5\SOURCE\OVERIDE" ,"MPX;MPR|FXP;PRG" ,"WHERE is OVERIDE?")
 
 ACTIVATE POPUP shortcut
 
 *       *********************************************************
 *       *                                                         
-*       * _4G318GZOI  ON SELECTION BAR 1 OF POPUP shortcut        
+*       * _4GF1ASWTN  ON SELECTION BAR 1 OF POPUP shortcut        
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -58,7 +58,7 @@ ACTIVATE POPUP shortcut
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4g318gzoi
+PROCEDURE _4gf1aswtn
  ctablefield=_SCREEN.ActiveForm.ActiveControl.controlsource
  cControl=_SCREEN.ActiveForm.ActiveControl.name+"forecolor"
 pos=AT(".",ctablefield,1)
@@ -75,7 +75,7 @@ endif
 
 *       *********************************************************
 *       *                                                         
-*       * _4G318GZOJ  ON SELECTION BAR 2 OF POPUP shortcut        
+*       * _4GF1ASWTO  ON SELECTION BAR 2 OF POPUP shortcut        
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -86,7 +86,7 @@ endif
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4g318gzoj
+PROCEDURE _4gf1aswto
 ctablefield=_SCREEN.ActiveForm.ActiveControl.controlsource
 cControl=_SCREEN.ActiveForm.ActiveControl.name+"forecolor"
 pos=AT(".",ctablefield,1)
